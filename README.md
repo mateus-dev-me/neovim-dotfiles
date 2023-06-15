@@ -18,6 +18,32 @@ Certifique-se de ter as seguintes dependências instaladas antes de utilizar ess
 - [Neovim](https://neovim.io/) - O editor de texto em si.
 - [Packer](https://github.com/wbthomason/packer.nvim) - Um gerenciador de plugins para o Neovim.
 
+## Estrutura de arquivos
+
+```
+├── init.lua
+├── lua
+│   ├── core
+│   │   ├── editor.lua
+│   │   ├── keymaps.lua
+│   │   ├── settings.lua
+│   │   ├── setup.lua
+│   │   └── theme.lua
+│   └── plugins
+│       ├── config (configuração de cada plugin)
+│       │   ├── alpha.lua
+│       │   ├── autopairs.lua
+│       │   ├── floaterm.lua
+│       │   ├── lsp.lua
+│       │   ├── nvimtree.lua
+│       │   ├── py_lsp.lua
+│       │   ├── telescope.lua
+│       │   └── treesitter.lua
+│       └── packer.lua (init plugins)
+└── plugin
+    └── packer_compiled.lua
+```
+
 ## Instalação
 
 1. Clone este repositório em sua máquina:
